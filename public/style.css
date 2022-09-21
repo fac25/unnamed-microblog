@@ -1,18 +1,49 @@
+:root {
+  --primary-color: #1d9bf0;
+  --light-grey: #f7f9f9;
+  --grey: #899090;
+  --dark-grey: #495050;
+  --black: #03000eee;
+  --white: #fffffff5;
+}
+
 body {
+  color: var(--dark-grey);
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
     Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
 }
 
 .container {
   margin: 1rem auto;
-  width: min(30em, calc(50% + 2em));
+  width: min(60ch, calc(80% + 2em));
 }
 
-.container > * + * {
-  margin-top: 1rem;
+.posts {
+  border: solid 1px var(--grey);
 }
 
+/* Post card components */
 .post-item {
-  padding: 1rem;
-  border: solid 1px black;
+  padding: 2rem;
+}
+
+.container > * + *  {
+  border-top: solid 1px var(--grey);
+}
+
+.name {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.username, .time {
+  color: var(--grey);
+  font-size: 0.85rem;
+}
+
+.profile {
+  margin-bottom: 0.5rem;
+}
+.time {
+
 }

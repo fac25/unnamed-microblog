@@ -1,3 +1,9 @@
+function time() {
+  const date = Date.now();
+
+  return date;
+ }
+
 function form() {
   return `
     <form method='POST' id="form">
