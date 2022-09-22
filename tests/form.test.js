@@ -12,7 +12,7 @@ test('form is displayed on page', async () => {
   const body = await response.text()
   assert.match(
     body,
-    / <label for="username">Username<\/label>/,
+    / <input id="username" name="username" placeholder='Username'>/,
     `Expected html to include <input id="username" name="username"> but received ${body}`
   )
 })
