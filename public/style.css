@@ -1,6 +1,11 @@
+:root {
+  --button-color: #8ecdf8;
+  --font: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell,
+    “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
-    Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+  font-family: var(--font);
 }
 
 .container {
@@ -8,7 +13,7 @@ body {
   width: min(30em, calc(50% + 2em));
 }
 
-.container > * + * {
+.container > .post-item {
   margin-top: 1rem;
 }
 
