@@ -12,9 +12,6 @@ test('upon submition a new post is created', async () => {
   app.close()
   const body = await response.text()
 
-  const headers = Object.fromEntries(response.headers)
-  //   console.log('manuela')
-  //   console.log(headers)
   assert.match(
     body,
     /hello-from-oli/,
