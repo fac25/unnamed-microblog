@@ -16,5 +16,9 @@ What and why are we buiding it
 
 ## Design guidelines
 
+Light grey: #f7f9f9
+Primary colour: #1d9bf0
+
+
 ## Instructions on how to download and run
 
