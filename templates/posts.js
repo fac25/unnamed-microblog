@@ -3,8 +3,13 @@ function posts(postsArr) {
 }
 
 function postItem({ handler, username, message }) {
-  const time = new Date()
+  const date = new Date()
+  const hours = date.getHours()
+  let minutes = date.getMinutes()
+  if (minutes<10) minutes = `0${minutes}`
+  const time =  `${hours}:${minutes}`
 
+  
   return `
     <div class='post-item'>
         <div class='profile'>
