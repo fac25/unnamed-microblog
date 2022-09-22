@@ -10,7 +10,7 @@ Working on it
 ## Intro
 What and why are we buiding it
 
-## Links (heroku site)
+## Links
 
 ## User stories
 
