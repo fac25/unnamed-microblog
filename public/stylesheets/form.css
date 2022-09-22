@@ -1,0 +1,13 @@
+
+#form {
+    background-color: #1d9bf0;
+    color: white;
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+    background-color: yellow;
+}
