@@ -6,3 +6,15 @@ Working on it
 
 
 [Project Board](https://github.com/orgs/fac25/projects/3)
+
+## Intro
+What and why are we buiding it
+
+## Links (heroku site)
+
+## User stories
+
+## Design guidelines
+
+## Instructions on how to download and run
+
