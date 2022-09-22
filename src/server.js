@@ -29,7 +29,9 @@ server.get('/', (request, response) => {
             </head>
             <body>
             ${form()}
-            ${posts(postsArr)}
+            <div class='container'>
+              ${posts(postsArr)}
+            </div>
             </body>
         </html>
     `)

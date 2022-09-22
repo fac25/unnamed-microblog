@@ -4,8 +4,8 @@ function posts(postsArr) {
 
 function postItem({ username, message }) {
   return `
-    <div class='container'>
-        <div class='profile-container'>
+    <div class='post-item'>
+        <div class='profile'>
             <span class='username'>${username}</span>
         </div>
         <div><span>${message}</span></div>

@@ -1,3 +1,18 @@
 body {
-  background-color: blue;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+    Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
+}
+
+.container {
+  margin: 1rem auto;
+  width: min(30em, calc(50% + 2em));
+}
+
+.container > * + * {
+  margin-top: 1rem;
+}
+
+.post-item {
+  padding: 1rem;
+  border: solid 1px black;
 }

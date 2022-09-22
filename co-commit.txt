@@ -4,4 +4,5 @@ git commit -m "Refactor usability tests.
 Co-authored-by: Alex <alexperezdavies@gmail.com>
 Co-authored-by: Manoela <99407460+modanova@users.noreply.github.com>
 Co-authored-by: Patrick <zefiru@protonmail.com>
-"e
+Co-authored-by: Paz <mariapazgar@gmail.com>
+"
