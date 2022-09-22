@@ -7,7 +7,7 @@
   --white: #fffffff5;
   --font: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell,
     “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
-    --button-color: #8ecdf8;
+  --button-color: #8ecdf8;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
 
 body {
   font-family: var(--font);
-
 }
 
 .container {
@@ -24,20 +23,17 @@ body {
   width: min(60ch, calc(80% + 2em));
 }
 
-
 .posts {
   border: solid 1px var(--grey);
-   margin-top: 1rem;
-   }
-
-
+  margin-top: 1rem;
+}
 
 /* Post card components */
 .post-item {
   padding: 2rem;
 }
 
-.container > * + *  {
+.container > .post-item + .post-item {
   border-top: solid 1px var(--grey);
 }
 
@@ -46,7 +42,8 @@ body {
   font-weight: 600;
 }
 
-.handler, .time {
+.handler,
+.time {
   color: var(--grey);
   font-size: 0.85rem;
 }
@@ -55,5 +52,4 @@ body {
   margin-bottom: 0.5rem;
 }
 .time {
-
 }

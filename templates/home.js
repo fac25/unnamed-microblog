@@ -13,6 +13,10 @@ function home(postsArr, errors = {}) {
                 <link rel='stylesheet' href='stylesheets/posts.css' />
             </head>
             <body>
+            <div class="container error-container">
+            <p>${errors.username || ''}</p>
+            <p>${errors.message || ''}</p>
+            </div>
             ${form()}
             <div class='container posts'>
               ${posts(postsArr)}
