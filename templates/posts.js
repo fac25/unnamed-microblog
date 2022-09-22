@@ -2,15 +2,16 @@ function posts(postsArr) {
   return `${postsArr.map(postItem).join('')}`
 }
 
-function postItem({ name, username, message }) {
+function postItem({ handler, username, message }) {
   const time = new Date()
-  console.log(name, username, message, 'hi')
 
   return `
     <div class='post-item'>
         <div class='profile'>
-            <span class='name'>${sanitize(name)}</span> 
-            <span class='username'>@${sanitize(username)}</span>
+            <span class='username'>${sanitize(username)}</span> 
+            <span class='handler'>@${sanitize(
+              handler || 'anonymoustwooter'
+            )}</span>
             <span class='time'> · ${time}</span>
         </div>
         <div class='message'>
