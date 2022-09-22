@@ -1,13 +1,39 @@
+@import './reset.css';
 
 #form {
-    background-color: #1d9bf0;
-    color: white;
-    width: 50vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem;
 }
+
+#username,
 textarea {
-    resize: none;
-    background-color: yellow;
+  padding: 1rem;
+  font-size: 1.25rem;
+  outline-color: rgba(0, 0, 0, 0.2);
+}
+
+#username {
+  border: none;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: none;
+  border: none;
+  font-family: var(--font);
+}
+
+button {
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  border-radius: 2rem;
+  background-color: var(--button-color);
+  border: none;
+  font-weight: 800;
+  color: #ffffff;
+  align-self: flex-end;
+  margin-top: 0.5rem;
 }
