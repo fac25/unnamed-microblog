@@ -12,7 +12,7 @@ const bodyParser = express.urlencoded()
 server.use(staticHandler)
 
 server.post('/', bodyParser, (request, response) => {
-  postsArr.push(request.body)
+  postsArr.unshift(request.body)
   response.redirect('/')
 })
 

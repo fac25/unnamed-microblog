@@ -41,12 +41,12 @@ body {
   border-top: solid 1px var(--grey);
 }
 
-.name {
+.username {
   color: var(--black);
   font-weight: 600;
 }
 
-.username, .time {
+.handler, .time {
   color: var(--grey);
   font-size: 0.85rem;
 }
