@@ -1,7 +1,7 @@
 const { form } = require('./form.js')
 const posts = require('./posts.js')
 
-function home(postsArr, errors = {}) {
+function home(postsArr, errors = {}, values = {}) {
   return `       
         <!doctype html>
         <html>
@@ -17,7 +17,7 @@ function home(postsArr, errors = {}) {
             <p>${errors.username || ''}</p>
             <p>${errors.message || ''}</p>
             </div>
-            ${form()}
+            ${form(values)}
             <div class='container posts'>
               ${posts(postsArr)}
             </div>
