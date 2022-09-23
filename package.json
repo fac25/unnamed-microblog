@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "start": "node ./src/index.js",
     "test:form": "node ./tests/form.test.js",
     "test:post": "node ./tests/post.test.js",
