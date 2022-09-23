@@ -14,7 +14,7 @@ function home(postsArr, errors = {}, values = {}) {
             <link rel='stylesheet' href='stylesheets/posts.css' />
           </head>
           <body>
-            <header>
+            <header class="container">
               <h1>Twooter</h1>
             </header>
             <main>
