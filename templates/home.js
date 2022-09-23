@@ -1,12 +1,13 @@
 const { form } = require('./form.js')
 const posts = require('./posts.js')
 
-function home(postsArr, errors = {}) {
+function home(postsArr, errors = {}, values = {}) {
   return `       
         <!doctype html>
         <html>
+
           <head>
-            <title>Twitter clone</title>
+            <title>Twooter</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel='stylesheet' href='style.css' />
             <link rel='stylesheet' href='stylesheets/form.css' />
@@ -21,12 +22,13 @@ function home(postsArr, errors = {}) {
               <p>${errors.username || ''}</p>
               <p>${errors.message || ''}</p>
               </div>
-              ${form()}
+              ${form(values)}
               <div class='container posts'>
                 ${posts(postsArr)}
               </div>
             </main>
           </body>
+
         </html>
     `
 }
