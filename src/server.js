@@ -13,14 +13,15 @@ server.use(staticHandler)
 server.post('/', bodyParser, (request, response) => {
   const username = request.body.username
   const message = request.body.message
+
   const errors = {}
 
   if (username === '') errors.username = 'Username required.'
   if (message === '') errors.message = 'Message required.'
 
-  if ('username' in errors || 'message' in errors)
-    return response.status(400).send(home(postsArr, errors))
-
+  if (Object.keys(errors).length) {
+    return response.status(400).send(home(postsArr, errors, request.body))
+  }
   postsArr.unshift(request.body)
   response.redirect('/')
 })
